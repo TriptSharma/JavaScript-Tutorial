@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # javascript tutorial
 
 Quick start:
@@ -29,3 +30,7 @@ in a while. So if you've ever wanted to "give back" to Scrimba, you can do that 
 	It would also mean the world to us if you share the courses.  
 
 Happy Coding!
+=======
+# JavaScript-Tutorial
+Notes for Javascript - Beginner
+>>>>>>> 8be60f9d41b8346f428c7e365282c2bd48c41dd4
