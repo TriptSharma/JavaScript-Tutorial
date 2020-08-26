@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="Scripts/angular.min.js"></script>
+		<script src="Scripts/notes_script.js"></script>
+	</head>
+	<body>
+		<div>
+			10 + 20 = {{ 10+20 }}   
+		</div>
+
+		<div>
+			{{ { name:'Jeff Bezos', company: 'Amazon'}.name }}
+		</div>
+
+		<div>
+			{{ }<!>} is called data binding expression
+			<br><br>
+			ng-app attribute is scope dependent. It allows angular to work in the given scope/tag. 
+			<br><br>
+			ng-app not used in this div tag hence {{ }} is not evaluated here.
+			<br><br>
+			<b>NOTE: We can declare ng-app atrribute to only one tag throughtout the html. Angular will work only in that tag and nowhere else. So select the tag wisely. Genreally put it in html tag so it can be used globally in the html.</b>
+		</div>
+
+		<h2>Handling events</h2>
+		<div ng-app="employee" ng-controller="employeeController">
+			<table>
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Company</th>
+						<th>Likes</th>
+						<th>Dislikes</th>
+						<th>Like/Dislike</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="ceo in ceos">
+						<td>{{ceo.name}}</td>
+						<td>{{ceo.company}}</td>
+						<td>{{ceo.likes}}</td>
+						<td>{{ceo.dislikes}}</td>
+						<td>
+							<input type="button" value="Like" ng-click="increaseLikes(ceo)">
+							<input type="button" value="Dislike" ng-click="increaseDislikes(ceo)">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>
