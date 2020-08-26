@@ -18,5 +18,9 @@ $ yarn watch # npm run watch
 
 
 
+<<<<<<< HEAD
 ## Happy Coding!
+=======
+##Happy Coding!
+>>>>>>> 61f71ddd83de22c378b8632d7f4312c43b058ab5
 Created using Scrimba
